@@ -8,7 +8,9 @@
     <link href="css/app.css" rel="stylesheet">
     <script src="lib/ionic/js/ionic.bundle.min.js"></script>
     <script src="js/app.js"></script>
-    <script src="cordova.js"></script>
+    <script src="js/controller.js"></script>
+    <script src="js/service.js"></script>
+    <!--<script src="cordova.js"></script>-->
 </head>
 
 <body ng-controller="MainCtrl">
@@ -54,12 +56,18 @@
 
 <script id="main.html" type="text/ng-template">
     <ion-view>
-        <ion-content>
+        <ion-content >
             Here is Open Party Main Page,
             I'm {{ user.name }}, working at {{ user.employer }}.
             <div>
                 <button class="button button-positive" ng-click="popCheckIn()">
                     show Check in
+                </button>
+            </div>
+
+            <div>
+                <button class="button button-positive" ng-click="cleanUser()">
+                    Clean
                 </button>
             </div>
         </ion-content>

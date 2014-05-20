@@ -1,4 +1,4 @@
-<html>
+<html ng-app="open_party">
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
@@ -8,73 +8,68 @@
     <link href="css/app.css" rel="stylesheet">
     <script src="lib/ionic/js/ionic.bundle.min.js"></script>
     <script src="js/app.js"></script>
+    <script src="js/controller.js"></script>
+    <script src="js/service.js"></script>
+    <!--<script src="cordova.js"></script>-->
 </head>
 
-<body ng-app="ionicApp" animation="slide-left-right-ios7">
+<body ng-controller="MainCtrl">
 
-<ion-nav-bar class="nav-title-slide-ios7 bar-light">
-    <ion-nav-back-button class="button-icon ion-arrow-left-c">
-    </ion-nav-back-button>
-</ion-nav-bar>
+<ion-nav-view animation="slide-left-right"></ion-nav-view>
 
-<ion-nav-view></ion-nav-view>
-
-
-<script id="intro.html" type="text/ng-template">
+<script id="personal_info.html" type="text/ng-template">
     <ion-view>
-        <!--<ion-nav-buttons side="left">-->
-        <!--<button class="button button-positive button-clear no-animation"-->
-        <!--ng-click="startApp()" ng-if="!slideIndex">-->
-        <!--Skip Intro-->
-        <!--</button>-->
-        <!--<button class="button button-positive button-clear no-animation"-->
-        <!--ng-click="previous()" ng-if="slideIndex > 0">-->
-        <!--Previous Slide-->
-        <!--</button>-->
-        <!--</ion-nav-buttons>-->
-        <!--<ion-nav-buttons side="right">-->
-        <!--<button class="button button-positive button-clear no-animation"-->
-        <!--ng-click="next()" ng-if="slideIndex != 2">-->
-        <!--Next-->
-        <!--</button>-->
-        <!--<button class="button button-positive button-clear no-animation"-->
-        <!--ng-click="startApp()" ng-if="slideIndex == 2">-->
-        <!--Start using MyApp-->
-        <!--</button>-->
-        <!--</ion-nav-buttons>-->
-        <ion-slide-box on-slide-changed="slideChanged(index)">
-            <ion-slide>
-                <div id="boot-1">
-                    <img src="img/open_1.jpg">
-                </div>
-                <button class="button button-positive button-clear no-animation"
-                        ng-click="startApp()" ng-if="!slideIndex">
-                    Skip
+        <ion-content>
+            <div class="list">
+                <label class="item item-input">
+                    <span class="input-label">姓名</span>
+                    <input type="text" ng-model="user.name">
+                </label>
+                <label class="item item-input">
+                    <span class="input-label">电话</span>
+                    <input type="tel" ng-model="user.phone">
+                </label>
+
+                <label class="item item-input">
+                    <span class="input-label">Email</span>
+                    <input type="email" ng-model="user.email">
+                </label>
+
+                <label class="item item-input">
+                    <span class="input-label">当前公司</span>
+                    <input type="text" ng-model="user.employer">
+                </label>
+
+                <label class="item item-input">
+                    <span class="input-label">工作年限</span>
+                    <input type="number" ng-model="user.experience">
+                </label>
+            </div>
+            <div class="padding">
+                <button class="button button-block button-positive" ng-click="save(user)">
+                    保存
                 </button>
-            </ion-slide>
-            <ion-slide>
-                <div id="boot-2">
-                    <img src="img/open_2.jpg">
-                </div>
-                <button class="button button-positive button-clear no-animation"
-                        ng-click="startApp()" ng-if="!slideIndex">
-                    Skip
-                </button>
-            </ion-slide>
-            <ion-slide>
-                <button ng-click="startApp()">
-                    Let's Party
-                </button>
-            </ion-slide>
-        </ion-slide-box>
+            </div>
+        </ion-content>
     </ion-view>
 </script>
 
 <script id="main.html" type="text/ng-template">
-    <ion-view hide-back-button="true" title="Awesome">
-        <ion-content padding="true">
-            <h1>Here is the Open Party Main page</h1>
-            <button class="button" ng-click="toIntro()">Do Tutorial Again</button>
+    <ion-view>
+        <ion-content >
+            Here is Open Party Main Page,
+            I'm {{ user.name }}, working at {{ user.employer }}.
+            <div>
+                <button class="button button-positive" ng-click="popCheckIn()">
+                    show Check in
+                </button>
+            </div>
+
+            <div>
+                <button class="button button-positive" ng-click="cleanUser()">
+                    Clean
+                </button>
+            </div>
         </ion-content>
     </ion-view>
 </script>
