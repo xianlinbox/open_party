@@ -41,6 +41,8 @@
 		48B430420DE2427E8584779D /* CDVLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 024C011081344EFB9294999C /* CDVLogger.m */; };
 		A254ABF931624A1DA6220A32 /* CDVDevice.m in Sources */ = {isa = PBXBuildFile; fileRef = BAEC76E0341A4ABEA15B9614 /* CDVDevice.m */; };
 		D577D9AE2C7C4C2C9A47BDA6 /* CDVStatusBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A82E7E69CCB42C2946793DA /* CDVStatusBar.m */; };
+		575DDF730254478B800BF070 /* CDVIBeacon.m in Sources */ = {isa = PBXBuildFile; fileRef = F5897DFC55A74A90B861489B /* CDVIBeacon.m */; };
+		596FAF454D3D4C9FB22EB125 /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 302E64315F6845FA89AEFD82 /* CoreBluetooth.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -111,6 +113,9 @@
 		57798C3A7CFB48AEB06DD6DF /* CDVDevice.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "CDVDevice.h"; path = "org.apache.cordova.device/CDVDevice.h"; sourceTree = "<group>"; fileEncoding = 4; };
 		1A82E7E69CCB42C2946793DA /* CDVStatusBar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "CDVStatusBar.m"; path = "org.apache.cordova.statusbar/CDVStatusBar.m"; sourceTree = "<group>"; fileEncoding = 4; };
 		5FB89785A8E641E086070309 /* CDVStatusBar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "CDVStatusBar.h"; path = "org.apache.cordova.statusbar/CDVStatusBar.h"; sourceTree = "<group>"; fileEncoding = 4; };
+		F5897DFC55A74A90B861489B /* CDVIBeacon.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "CDVIBeacon.m"; path = "org.apache.cordova.ibeacon/CDVIBeacon.m"; sourceTree = "<group>"; fileEncoding = 4; };
+		3EB663A8C7E54CCF9F3C7B41 /* CDVIBeacon.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "CDVIBeacon.h"; path = "org.apache.cordova.ibeacon/CDVIBeacon.h"; sourceTree = "<group>"; fileEncoding = 4; };
+		302E64315F6845FA89AEFD82 /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "CoreBluetooth.framework"; path = "System/Library/Frameworks/CoreBluetooth.framework"; sourceTree = SDKROOT; fileEncoding = 4; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,6 +128,7 @@
 				288765FD0DF74451002DB57D /* CoreGraphics.framework in Frameworks */,
 				305D5FD1115AB8F900A74A75 /* MobileCoreServices.framework in Frameworks */,
 				5AEE5B35173C68D80009041E /* CoreLocation.framework in Frameworks */,
+				596FAF454D3D4C9FB22EB125 /* CoreBluetooth.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -216,6 +222,7 @@
 				5B1594DC16A7569C00FEF299 /* AssetsLibrary.framework */,
 				288765FC0DF74451002DB57D /* CoreGraphics.framework */,
 				305D5FD0115AB8F900A74A75 /* MobileCoreServices.framework */,
+				302E64315F6845FA89AEFD82 /* CoreBluetooth.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -237,6 +244,8 @@
 				57798C3A7CFB48AEB06DD6DF /* CDVDevice.h */,
 				1A82E7E69CCB42C2946793DA /* CDVStatusBar.m */,
 				5FB89785A8E641E086070309 /* CDVStatusBar.h */,
+				F5897DFC55A74A90B861489B /* CDVIBeacon.m */,
+				3EB663A8C7E54CCF9F3C7B41 /* CDVIBeacon.h */,
 			);
 			name = Plugins;
 			path = "Open Party/Plugins";
@@ -434,6 +443,7 @@
 				48B430420DE2427E8584779D /* CDVLogger.m in Sources */,
 				A254ABF931624A1DA6220A32 /* CDVDevice.m in Sources */,
 				D577D9AE2C7C4C2C9A47BDA6 /* CDVStatusBar.m in Sources */,
+				575DDF730254478B800BF070 /* CDVIBeacon.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

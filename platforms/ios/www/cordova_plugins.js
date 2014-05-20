@@ -27,6 +27,13 @@ module.exports = [
         "clobbers": [
             "window.StatusBar"
         ]
+    },
+    {
+        "file": "plugins/org.apache.cordova.ibeacon/www/IBeacon.js",
+        "id": "org.apache.cordova.ibeacon.device",
+        "clobbers": [
+            "IBeacon"
+        ]
     }
 ];
 module.exports.metadata = 
@@ -34,7 +41,8 @@ module.exports.metadata =
 {
     "org.apache.cordova.console": "0.2.8",
     "org.apache.cordova.device": "0.2.9",
-    "org.apache.cordova.statusbar": "0.1.3"
+    "org.apache.cordova.statusbar": "0.1.3",
+    "org.apache.cordova.ibeacon": "1.0.0"
 }
 // BOTTOM OF METADATA
 });
