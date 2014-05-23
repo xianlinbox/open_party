@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>3CB2DADE-FE9E-4BE9-8262-266B84B065E8</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Open Party</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>7F466563-7DB8-4D5C-89E8-FFBC882F71A2</key>
+		<string>ssh://github.com/xianlinbox/open_party.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>platforms/ios/Open Party.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>7F466563-7DB8-4D5C-89E8-FFBC882F71A2</key>
+		<string>../../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>ssh://github.com/xianlinbox/open_party.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>7F466563-7DB8-4D5C-89E8-FFBC882F71A2</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>7F466563-7DB8-4D5C-89E8-FFBC882F71A2</string>
+			<key>IDESourceControlWCCName</key>
+			<string>open_party</string>
+		</dict>
+	</array>
+</dict>
+</plist>

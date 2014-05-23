@@ -27,6 +27,9 @@
     </feature>
     <preference name="StatusBarOverlaysWebView" value="true" />
     <preference name="StatusBarBackgroundColor" value="#000000" />
+    <feature name="IBeacon">
+        <param name="ios-package" value="CDVIBeacon" />
+    </feature>
     <name>Open Party</name>
     <description>
         An open party client app
@@ -43,8 +46,5 @@
     <preference name="BackupWebStorage" value="none" />
     <feature name="StatusBar">
         <param name="ios-package" onload="true" value="CDVStatusBar" />
-    </feature>
-    <feature name="IBeacon">
-        <param name="ios-package" value="CDVIBeacon" />
     </feature>
 </widget>

@@ -26,7 +26,7 @@ gulp.task('watch', function () {
     gulp.watch(['./www/*.html'], ['html']);
 });
 
-gulp.task('connect', function() {
+gulp.task('connect', function () {
     connect.server({
         root: 'www',
         livereload: true
@@ -38,4 +38,4 @@ gulp.task('html', function () {
         .pipe(connect.reload());
 });
 
-gulp.task('default', ['connect','sass','watch']);
+gulp.task('default', ['connect', 'sass', 'watch']);
